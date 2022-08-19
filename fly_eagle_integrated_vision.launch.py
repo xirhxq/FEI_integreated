@@ -36,7 +36,38 @@ def launch(context, *arge, **kwargs):
 			)
 		)
 		
-		
+	if robot_name[:4] == 'tuav':
+		id_str = robot_name[5:]
+		id_num = int(id_str)
+		print(id_str, id_num)	
+		ld.append(
+			IncludeLaunchDescription(
+				PythonLaunchDescriptionSource([
+					PathJoinSubstitution([
+						FindPackageShare('vessel_det'),
+						'launch',
+						'tuav_vessel_det_launch.py'
+					])
+				]),
+				launch_arguments={
+					'numbers': id_str
+				}.items()
+			)
+		)
+		ld.append(
+			IncludeLaunchDescription(
+				PythonLaunchDescriptionSource([
+					PathJoinSubstitution([
+						FindPackageShare('target_det'),
+						'launch',
+						'tuav_target_det_launch.py'
+					])
+				]),
+				launch_arguments={
+					'numbers': id_str
+				}.items()
+			)
+		)
 		
 	return ld
 	

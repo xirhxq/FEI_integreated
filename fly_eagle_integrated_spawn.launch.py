@@ -35,7 +35,25 @@ def launch(context, *arge, **kwargs):
 				}.items()
 			)
 		)
-		
+	
+	elif robot_name[:4] == 'tuav':
+		id_str = robot_name[5:]
+		id_num = int(id_str)
+		print(id_str, id_num)	
+		ld.append(
+			IncludeLaunchDescription(
+				PythonLaunchDescriptionSource([
+					PathJoinSubstitution([
+						FindPackageShare('landing'),
+						'launch',
+						'spawn_tuav.launch.py'
+					])
+				]),
+				launch_arguments={
+					'robot_name': 'tuav_' + id_str
+				}.items()
+			)
+		)
 		
 		
 	return ld
