@@ -21,20 +21,20 @@ def launch(context, *arge, **kwargs):
 		id_str = robot_name[5:]
 		id_num = int(id_str)
 		print(id_str, id_num)	
-		ld.append(
-			IncludeLaunchDescription(
-				PythonLaunchDescriptionSource([
-					PathJoinSubstitution([
-						FindPackageShare('search'),
-						'launch',
-						'spawn_suav.py'
-					])
-				]),
-				launch_arguments={
-					'numbers': id_str
-				}.items()
-			)
-		)
+		# ld.append(
+		# 	IncludeLaunchDescription(
+		# 		PythonLaunchDescriptionSource([
+		# 			PathJoinSubstitution([
+		# 				FindPackageShare('search'),
+		# 				'launch',
+		# 				'spawn_suav.py'
+		# 			])
+		# 		]),
+		# 		launch_arguments={
+		# 			'numbers': id_str
+		# 		}.items()
+		# 	)
+		# )
 		ld.append(
 			IncludeLaunchDescription(
 				PythonLaunchDescriptionSource([

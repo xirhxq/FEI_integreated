@@ -25,7 +25,7 @@ def launch(context, *arge, **kwargs):
             Node(
                 package='search',
                 executable='sUAV',
-                name='s' + id_str,
+                name='sssss' + id_str,
                 arguments=[id_str],
                 output='screen'
             )
@@ -55,7 +55,22 @@ def launch(context, *arge, **kwargs):
                   output='screen'
               )
           )	
+    # elif robot_name[:4] == 'buav':
+    #     id_str = robot_name[5:]
+    #     id_num = int(id_str)
+    #     print(id_str, id_num)
 
+    #     ld.append(
+    #         IncludeLaunchDescription(
+    #             PythonLaunchDescriptionSource([
+    #                 PathJoinSubstitution([
+    #                     FindPackageShare('base'),
+    #                     'launch',
+    #                     'buav_' + id_str + '_takeoff.launch.py'
+    #                 ])
+    #             ])
+    #         )
+    #     )
     
         
     return ld

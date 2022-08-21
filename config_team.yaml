@@ -1,0 +1,282 @@
+---
+- model_name: 'buav_1'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1515, 5, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+    slot6: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 0, 0]
+    slot7:
+      sensor: 'mbzirc_3d_lidar'
+      rpy: [0, 0, 0]
+      
+- model_name: 'buav_2'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1515, -5.0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+    slot6: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 0, 0]
+    slot7:
+      sensor: 'mbzirc_3d_lidar'
+      rpy: [0, 0, 0]
+      
+- model_name: 'buav_3'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1485, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+    slot6: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 0, 0]
+    slot7:
+      sensor: 'mbzirc_3d_lidar'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_1'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1492, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_2'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1494, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_3'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1496, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_4'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1498, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_5'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1500, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_6'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1502, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_7'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1504, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_8'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1506, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_9'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1508, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_10'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1510, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_11'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1512, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_12'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1514, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'suav_13'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1516, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+
+- model_name: 'suav_14'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 60
+  position:
+    xyz: [-1518, 0, 4.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+
+- model_name: 'tuav_1'
+  model_type: 'mbzirc_quadrotor'
+  flight_time: 10
+  position:
+    xyz: [-1462, -16.5, 1.3]
+    rpy: [0, 0, 0]
+  payload:
+    slot0: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 30, 0]
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
+    slot6: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 0, 0]
+    slot7: 
+      sensor: 'mbzirc_hd_camera'
+      rpy: [0, 0, 0]
+  gripper : 'mbzirc_suction_gripper_light'
+
+- model_name: 'usv'
+  model_type: 'usv'
+  position:
+    xyz: [-1462, -16.5, 0.3]
+    rpy: [0, 0, 0]
+  arm: mbzirc_oberon7_arm
+  gripper: mbzirc_oberon7_gripper
+  arm_slot: '0'
+  payload:
+    slot1:
+      sensor: 'mbzirc_rf_long_range'
+      rpy: [0, 0, 0]
