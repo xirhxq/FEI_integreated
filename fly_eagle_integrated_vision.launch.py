@@ -68,6 +68,19 @@ def launch(context, *arge, **kwargs):
 				}.items()
 			)
 		)
+
+	# if robot_name[:3] == "usv":
+	# 	ld.append(
+	# 		IncludeLaunchDescription(
+	# 			PythonLaunchDescriptionSource([
+	# 				PathJoinSubstitution([
+	# 					FindPackageShare('usv_vessel_det'),
+	# 					'launch',
+	# 					'usv_vessel_det_launch.py'
+	# 				])
+	# 			])
+	# 		)
+	# 	)
 		
 	return ld
 	

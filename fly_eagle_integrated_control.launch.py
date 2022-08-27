@@ -54,7 +54,23 @@ def launch(context, *arge, **kwargs):
                   arguments=[id_str],
                   output='screen'
               )
-          )	
+          )
+
+    # elif robot_name[:3] == 'usv':
+    #     ld.append(
+    #         IncludeLaunchDescription(
+    #             PythonLaunchDescriptionSource([
+    #                 PathJoinSubstitution([
+    #                     FindPackageShare('usv_navigation'),
+    #                     'launch',
+    #                     'usv_navigation_bringsup.launch.py'
+    #                 ])
+    #             ]),
+    #             launch_arguments={
+	# 				'robot_name': 'usv'
+	# 			}.items()
+    #         )
+    #     )
     # elif robot_name[:4] == 'buav':
     #     id_str = robot_name[5:]
     #     id_num = int(id_str)

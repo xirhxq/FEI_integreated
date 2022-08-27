@@ -48,24 +48,26 @@ for i in 1 2 3; do
         echo $@
 
         . /opt/ros/noetic/setup.bash
-        . ~/localization_ros1_ws/devel/setup.bash
-
-        # if [[ $@ == "buav_1" ]]; then
+        if [[ $@ == "buav_1" ]]; then
         roscore &
         echo -e "\033[31msuccessfully run roscore\033[0m"
-        # fi
+        fi
 
         sleep 10
 
+        if [[ $@ == "buav_1" ]]; then
         rosparam set use_sim_time true
         rosparam load ~/localization_ros2_ws/src/ros1_bridge/config/bridge_buav_paramter.yaml
         echo -e "\033[31msuccessfully set params\033[0m"
+        fi
         sleep 10
 
         . ~/localization_ros2_ws/install/setup.bash
+        if [[ $@ == "buav_1" ]]; then
  
         ros2 run ros1_bridge parameter_bridge &
         echo -e "\033[31msuccessfully run parameter_bridge\033[0m"
+        fi
         sleep 10
 
         ros2 launch ros1_bridge "$@".launch.py &
@@ -80,14 +82,14 @@ for i in 1 2 3; do
         echo -e "\033[31msuccessfully launch buav${i}_tx.launch.py\033[0m"
         sleep 5
         
-        # if [[ $@ == "buav_2" ]]; then
-        #     sleep 10
-        # fi
-        # if [[ $@ == "buav_3" ]]; then
-        #     sleep 20
-        # fi
+        if [[ $@ == "buav_2" ]]; then
+            sleep 10
+        fi
+        if [[ $@ == "buav_3" ]]; then
+            sleep 20
+        fi
 
-
+        . ~/localization_ros1_ws/devel/setup.bash
         roslaunch r3live  multi_agent"$i".launch
         echo -e "\033[31msuccessfully run multi_agent${i}.launch\033[0m"
         sleep 30
@@ -124,6 +126,10 @@ for i in 1 2 3; do
     fi
 done
 
+if [[ $@ == "usv" ]]; then
+    bash ~/ku_ws/src/usv_navigation/run_solution.bash &
+    echo -e "\033[31mRun run_solution.bash\033[0m"
+fi 
 
 ros2 launch ~/FEI_integrated/fly_eagle_integrated_vision.launch.py robot_name:=$@ &
 echo -e "\033[31msuccessfully run fly_eagle_integrated_vision.launch.py for $@\033[0m"
@@ -134,5 +140,6 @@ sleep 1
 ros2 launch ~/FEI_integrated/fly_eagle_integrated_locate.launch.py robot_name:=$@ &
 echo -e "\033[31msuccessfully run fly_eagle_integrated_locate.launch.py for $@\033[0m"
 sleep 1
+
 ros2 launch ~/FEI_integrated/fly_eagle_integrated_control.launch.py robot_name:=$@
 echo -e "\033[31msuccessfully run fly_eagle_integrated_control.launch.py for $@\033[0m"

@@ -3,7 +3,7 @@
   model_type: 'mbzirc_quadrotor'
   flight_time: 60
   position:
-    xyz: [-1515, 5, 4.3]
+    xyz: [-1531, 400, 4.2]
     rpy: [0, 0, 0]
   payload:
     slot1:
@@ -20,7 +20,7 @@
   model_type: 'mbzirc_quadrotor'
   flight_time: 60
   position:
-    xyz: [-1515, -5.0, 4.3]
+    xyz: [-1540, -400, 4.2]
     rpy: [0, 0, 0]
   payload:
     slot1:
@@ -37,7 +37,7 @@
   model_type: 'mbzirc_quadrotor'
   flight_time: 60
   position:
-    xyz: [-1485, 0, 4.3]
+    xyz: [-1483, -6, 4.2]
     rpy: [0, 0, 0]
   payload:
     slot1:
